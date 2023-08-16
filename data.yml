@@ -22,7 +22,7 @@ stepTypes:
     metadata:
       defaultStorageLocation: null
       error: null
-      nodeMetadataSpec: |-
+      nodeMetadataSpec: |
         capitalized: Copy of Stage
         short: STG
         plural: Stages
@@ -70,19 +70,6 @@ stepTypes:
             type: textBox
             syntax: sql
             isRequired: true
-
-          - displayName: Post-SQL
-            attributeName: postSQL
-            type: textBox
-            syntax: sql
-            isRequired: false
-        - groupName: "new group"
-          description: "guess where i am"
-          items:
-            - displayName: Ack
-              attributeName: Ack
-              type: toggleButton
-              default: true
       templates:
         create:
           templateString: |
